@@ -253,12 +253,12 @@ h2 {
   transition: all 0.5s;
 }
 
-.item-js:hover .line-js {
+.item-js:hover .line-js,
+.item-git:hover .line-git {
   width: 30%;
   transition: all 0.5s;
 }
 
-.item-git:hover .line-git,
 .item-vsc:hover .line-vsc {
   width: 50%;
   transition: all 0.5s;
