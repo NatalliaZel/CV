@@ -1,5 +1,3 @@
-/*document.addEventListener("DOMContentLoaded", () => {});*/
-
 const skillHtml = document.getElementById("item-html");
 const skillCss = document.getElementById("item-css");
 const skillJs = document.getElementById("item-js");
