@@ -12,23 +12,26 @@
         <header class="header">
           <nav class="header-navigiton navigiton">
             <ul class="navigation-list">
-              <li class="navigation-item">
+              <li class="navigation-item item-contacts">
                 <a href="#contacts" class="navigation-link">Contacts</a>
               </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link">About</a>
+              <li class="navigation-item item-about">
+                <a href="#about" class="navigation-link">About me</a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item item-skills">
                 <a href="#skills" class="navigation-link">Skills</a>
               </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link">Education</a>
+              <li class="navigation-item item-education">
+                <a href="#education" class="navigation-link">Education</a>
               </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link">Languages</a>
+              <li class="navigation-item item-languages">
+                <a href="#languages" class="navigation-link">Languages</a>
               </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link">Code example</a>
+              <li class="navigation-item item-projects">
+                <a href="#projects" class="navigation-link">Projects</a>
+              </li>
+              <li class="navigation-item item-code">
+                <a href="#code" class="navigation-link">Code example</a>
               </li>
             </ul>
           </nav>
@@ -80,7 +83,6 @@
                       >+375-(29)-333-01-78</a
                     >
                   </div>
-
                   <div class="contacts-item contacts-email">
                     <div class="contacts-icon">
                       <img src="images/email.png" alt="email" />
@@ -114,37 +116,37 @@
                   <div class="skills-item item-html">
                     <p class="skills-name">HTML5</p>
                     <div class="skills-bar bar">
-                      <div class="bar-line line-html"></div>
+                      <div class="bar-line line-html" id="item-html"></div>
                     </div>
-                    <div class="skills-counter">80%</div>
+                    <div class="skills-counter" id="number-html">0%</div>
                   </div>
                   <div class="skills-item item-css">
                     <p class="skills-name">CSS3</p>
                     <div class="skills-bar bar">
-                      <div class="bar-line line-css"></div>
+                      <div class="bar-line line-css" id="item-css"></div>
                     </div>
-                    <div class="skills-counter">80%</div>
+                    <div class="skills-counter" id="number-css">0%</div>
                   </div>
                   <div class="skills-item item-js">
                     <p class="skills-name">Java Script</p>
                     <div class="skills-bar bar">
-                      <div class="bar-line line-js"></div>
+                      <div class="bar-line line-js" id="item-js"></div>
                     </div>
-                    <div class="skills-counter">30%</div>
+                    <div class="skills-counter" id="number-js">0%</div>
                   </div>
                   <div class="skills-item item-git">
                     <p class="skills-name">Git, GitHub</p>
                     <div class="skills-bar bar">
-                      <div class="bar-line line-git"></div>
+                      <div class="bar-line line-git" id="item-git"></div>
                     </div>
-                    <div class="skills-counter">30%</div>
+                    <div class="skills-counter" id="number-git">0%</div>
                   </div>
                   <div class="skills-item item-vsc">
                     <p class="skills-name">VSC</p>
                     <div class="skills-bar bar">
-                      <div class="bar-line line-vsc"></div>
+                      <div class="bar-line line-vsc" id="item-vsc"></div>
                     </div>
-                    <div class="skills-counter">50%</div>
+                    <div class="skills-counter" id="number-vsc">0%</div>
                   </div>
                 </div>
               </section>
@@ -155,30 +157,274 @@
                 <div class="languages-container">
                   <div class="languages-item english">
                     <div class="english-circle">
-                      <div class="circle"></div>
+                      <div class="circle">
+                        <div class="outer-circle">
+                          <div class="inner-circle">A2</div>
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          width="160px"
+                          height="160px"
+                        >
+                          <defs>
+                            <linearGradient id="GradientColorEng">
+                              <stop offset="0%" stop-color="#70a8c0"></stop>
+                              <stop offset="100%" stop-color="#70a8c066"></stop>
+                            </linearGradient>
+                          </defs>
+                          <circle
+                            id="circle-eng"
+                            cx="80"
+                            cy="80"
+                            r="70"
+                            stroke-linecap="round"
+                          ></circle>
+                        </svg>
+                      </div>
                     </div>
                     <p class="english-name">English</p>
                   </div>
                   <div class="languages-item poland">
                     <div class="poland-circle">
-                      <div class="circle"></div>
+                      <div class="circle">
+                        <div class="outer-circle">
+                          <div class="inner-circle">A1</div>
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          width="160px"
+                          height="160px"
+                        >
+                          <defs>
+                            <linearGradient id="GradientColorPol">
+                              <stop offset="0%" stop-color="#70a8c0"></stop>
+                              <stop offset="100%" stop-color="#70a8c066"></stop>
+                            </linearGradient>
+                          </defs>
+                          <circle
+                            id="circle-pol"
+                            cx="80"
+                            cy="80"
+                            r="70"
+                            stroke-linecap="round"
+                          ></circle>
+                        </svg>
+                      </div>
                     </div>
                     <p class="poland-name">Poland</p>
-                  </div>
-                  <div class="languages-item russian">
-                    <div class="russian-circle">
-                      <div class="circle"></div>
-                    </div>
-                    <p class="russian-name">Russian</p>
                   </div>
                 </div>
               </section>
             </div>
-            <div class="content-right"></div>
+            <div class="content-right">
+              <section class="content-about about" id="about">
+                <h2 class="about-title title">About me</h2>
+                <div class="about-line line"></div>
+                <div class="about-container">
+                  <p class="about-paragraph">
+                    I am interested in web development because this field offers
+                    great opportunities and career growth. In this area, there
+                    are a large number of materials for self-education and a
+                    large community.
+                  </p>
+                  <p class="about-paragraph">
+                    My goal is to master the profession of a front-end developer
+                    and create high-quality projects. I always try to expand my
+                    skills in different areas and love to work in a team.
+                  </p>
+                  <p class="about-paragraph">
+                    I believe, that my ability to learn and to gain new skills
+                    will lead me through this path of becoming a proficient
+                    Front-end Developer.
+                  </p>
+                </div>
+              </section>
+
+              <section class="content-education education" id="education">
+                <h2 class="education-title title">Education</h2>
+                <div class="education-line line"></div>
+                <div class="education-container">
+                  <ul class="education-list">
+                    <li class="education-item">
+                      <span> University:</span>
+                      Belarusian National Technical University,
+                      manager-economist, 2009 - 2013
+                    </li>
+                    <li class="education-item">
+                      <span>Courses:</span>
+                      <a
+                        href="https://app.rs.school/certificate/r28ci3wj"
+                        target="_blank"
+                        >RS SCHOOL, course “JavaScript/Front-end. Stage 0”,
+                        2023</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="content-projects projects" id="projects">
+                <h2 class="projects-title title">Projects</h2>
+                <div class="projects-line line"></div>
+                <div class="projects-container">
+                  <div class="project-slider slider">
+                    <input type="radio" name="control" id="r1" checked />
+                    <input type="radio" name="control" id="r2" />
+                    <input type="radio" name="control" id="r3" />
+                    <input type="radio" name="control" id="r4" />
+
+                    <div class="slider-window" id="slider-container">
+                      <div class="slider-image image-player">
+                        <img
+                          class="slider-item slider-player"
+                          id="slider-player"
+                          src="images/Player.png"
+                          alt="player"
+                        />
+
+                        <div class="image-cover" id="slider-image1">
+                          <div class="image-button-wrapper">
+                            <a
+                              href="https://natalliazel.github.io/Player/"
+                              class="player-link"
+                              target="_blank"
+                            >
+                              <button class="image-button">
+                                See the project
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="slider-image" id="slider-image2">
+                        <img
+                          class="slider-item slider-library"
+                          id="slider-library"
+                          src="images/library.png"
+                          alt="Library"
+                        />
+                        <div class="image-cover">
+                          <div class="image-button-wrapper">
+                            <a
+                              href="https://natalliazel.github.io/Library/"
+                              class="library-link"
+                              target="_blank"
+                            >
+                              <button class="image-button">
+                                See the project
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="slider-image" id="slider-image3">
+                        <img
+                          class="slider-item slider-coffee"
+                          id="slider-coffee"
+                          src="images/coffee.png"
+                          alt="Coffee"
+                        />
+
+                        <div class="image-cover">
+                          <div class="image-button-wrapper">
+                            <a
+                              href="https://natalliazel.github.io/coffee-shop/"
+                              class="coffee-link"
+                              target="_blank"
+                            >
+                              <button class="image-button">
+                                See the project
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="slider-image" id="slider-image4">
+                        <img
+                          class="slider-item slider-snake"
+                          id="slider-snake"
+                          src="images/Snake.png"
+                          alt="Snake"
+                        />
+                        <div class="image-cover">
+                          <div class="image-button-wrapper">
+                            <a
+                              href="https://natalliazel.github.io/cssMemeSlider/cssMemeSlider/"
+                              class="snake-link"
+                              target="_blank"
+                            >
+                              <button class="image-button">
+                                See the project
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-bottom">
+                      <div class="slider-labels">
+                        <label class="slider-label slider-label-1" for="r1"
+                          ><span
+                            class="slider-span slider-span-1"
+                            id="slider-span-1"
+                          ></span
+                        ></label>
+                        <label class="slider-label slider-label-2" for="r2"
+                          ><span
+                            class="slider-span slider-span-2"
+                            id="slider-span-2"
+                          ></span
+                        ></label>
+                        <label class="slider-label slider-label-3" for="r3"
+                          ><span
+                            class="slider-span slider-span-3"
+                            id="slider-span-3"
+                          ></span
+                        ></label>
+                        <label class="slider-label slider-label-4" for="r4"
+                          ><span
+                            class="slider-span slider-span-4"
+                            id="slider-span-4"
+                          ></span
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="content-code code" id="code">
+                <h2 class="code-title title">Code example</h2>
+                <div class="code-line line"></div>
+                <div class="code-container">
+                  <p class="code-text">
+                    Code shows prime numbers from 1 to 10 in console:
+                  </p>
+                  <div class="code-wrapper">
+                    <pre class="code-example">
+  let n = 10;
+    newStart: for (let i = 2; i &lt;= 10; i++) {
+      for (let j = 2; j &lt; i; j++>) {
+        if (i % j == 0) continue newStart;
+      }
+      console.log (i);
+    }</pre
+                    >
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </main>
         <footer class="footer"></footer>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
