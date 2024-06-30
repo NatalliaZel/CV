@@ -49,11 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showSkillsBar() {
     resetClasses();
-    skillHtml.classList.add("onloaded-html");
-    skillCss.classList.add("onloaded-css");
-    skillJs.classList.add("onloaded-js");
-    skillGit.classList.add("onloaded-git");
-    skillVsc.classList.add("onloaded-vsc");
+    requestAnimationFrame(() => {
+      skillHtml.classList.add("onloaded-html");
+      skillCss.classList.add("onloaded-css");
+      skillJs.classList.add("onloaded-js");
+      skillGit.classList.add("onloaded-git");
+      skillVsc.classList.add("onloaded-vsc");
+    });
   }
 
   function showPercentages() {
